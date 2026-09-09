@@ -7,8 +7,8 @@ void Sorting (int penjualan[]) {
     cout << "----------------------------------" << endl;
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 7 - i - 1; j++) {
-            if (penjualan[j] > penjualan[j + 1]) {
-                int temp = penjualan[j];
+            if (penjualan[j] > penjualan[j + 1]) { // Jika bilangan ke 1 lebih besar daripada bilangan ke 2
+                int temp = penjualan[j]; // Pergantian posisi pada data
                 penjualan[j] = penjualan[j + 1];
                 penjualan[j + 1] = temp;
             }
